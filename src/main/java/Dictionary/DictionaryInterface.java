@@ -1,5 +1,7 @@
 package Dictionary;
 
+import List.MySortedLinkedList;
+
 // Dictionary that stores values of type Object indexed by keys of type String
 interface DictionaryInterface {
     public boolean isEmpty(); // returns true if the Dictionary is empty, false otherwise.
@@ -9,9 +11,9 @@ interface DictionaryInterface {
     // Adds a value stored under the given key. If the key has already been stored in the Dictionary,
     // replaces the value associated with the key and returns the old value. If the key isn't in the dictionary
     // returns null.
-    public Object put(String key, Object value);
+    public  Object put(String key, Object value);
 
-    public Object get(String key); // Retrieves the value stored with the key.
+    public  MySortedLinkedList get(String key); // Retrieves the value stored with the key.
 
     public void remove(String key); // Deletes the key/value pair stored with the given key.
 

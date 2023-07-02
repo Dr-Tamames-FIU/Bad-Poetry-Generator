@@ -4,6 +4,8 @@ import java.util.*;
 import java.util.Arrays;
 import List.MyLinkedList;
 import List.MySortedLinkedList;
+import List.ListInterface;
+import List.MySortedLinkedList;
 
 public class RhymingDict {
     private static Random random;
@@ -60,9 +62,16 @@ public class RhymingDict {
 
     // ********** TO DO 2: Store a rhymeGroup (key) and word (value) in the Dictionary (hashtable) **********
     public static void storeRhyme(DictionaryInterface rhymingDict, String line) {
-
-
+        String word = getWord(line);
+        String rhymeGroup = getRhymeGroup(line);
+        MySortedLinkedList wordList = (MySortedLinkedList) rhymingDict.get(rhymeGroup);
+        if (wordList == null) {
+            wordList = new MySortedLinkedList();
+            rhymingDict.put(rhymeGroup, wordList);
+        }
+        wordList.add(word);
     }
+
 
     // Get two random indexes that are not the same
     public static int[] getTwoDifferentRandomIndexes(int length) {
