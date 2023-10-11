@@ -5,13 +5,13 @@ In this project we will use a rhyming dictionary and loading it into a hashtable
 
 ## Objectives
 
-TODO #1: Implement a hashtable
+TODO #1: Implement a hashtable.
 
-TODO #2: Loading the dictionary
+TODO #2: Loading the dictionary.
 Q
 Optional:
 
-TODO #3: Removing unrhymable words​
+TODO #3: Removing unrhymable words​.
 
 ## Testing
 
